@@ -1,0 +1,36 @@
+/**
+* Code by player01
+*
+* Copyright (c) 2020 Fire-css
+* Licensed under MIT
+**/
+
+%alert {
+    padding: 15px;
+    margin: 15px;
+    display: block;
+    border-radius: 4px;
+    font-family: Arial, sans-serif !important;
+    border: 1px solid transparent;
+}
+
+span[style^="font-family:'alert-success"] {
+    @extend %alert;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+span[style^="font-family:'alert-warning"] {
+    @extend %alert;
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+span[style^="font-family:'alert-danger"] {
+    @extend %alert;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
