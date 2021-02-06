@@ -1,0 +1,322 @@
+/*Tags from G.G.Otto's Lab.css*/
+
+div.message {
+  overflow: hidden; }
+
+/** download **/
+span[style^="font-family:'download"] {
+   font-family: Arial !important;
+   color: #0000bb; 
+   border-radius: 10px;
+   background-color: #cccccc;
+   margin-left: 50px;
+   margin-right: 50px;
+   text-align: center;
+   padding: 1px;
+   display: block; }
+span[style^="font-family:'download"]:before {
+   content: "Download: ";
+   color: black; }
+
+/** div.cmty-post-attached-file:hover,  
+span[style^="font-family:'download"]:hover {
+  animation: backgroundcolor3 1s;
+  background-color:  rgb(100,255,100) !important;
+  transform: scale(1.1);
+  border-radius: 5px; } **/
+
+/** Version Headers **/
+span[style^="font-family:'version"],
+span[style^="font-family:'version-red"],
+span[style^="font-family:'version-green"],
+span[style^="font-family:'version-yellow"]
+span[style^="font-family:'version-blue"] {
+  padding: 5px;
+  display: block;
+  border-radius: 10px;
+  font-family: 'Arial' !important;
+  font-size: 18pt;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #aaaaaa;
+  margin: 3px;
+}
+span[style^="font-family:'version-grey"] {
+  background-color: #dddddd;
+  color: #888888;
+}
+span[style^="font-family:'version-red"] {
+  color: #ff0000;
+  background-color: #ffdddd;
+}
+span[style^="font-family:'version-black"] {
+  color: #ffffff;
+  background-color: #000000;
+}
+span[style^="font-family:'version-green"] {
+  color: #00e500;
+  background-color: #ddffdd;
+}
+span[style^="font-family:'version-yellow"] {
+  color: #e5e500;
+  background-color: #ffffd2;
+}
+span[style^="font-family:'version-blue"] {
+  color: #0000ff;
+  background-color: #ddddff;
+}
+@keyframes rainbow2 {
+0% { color: red; }
+16.6% { color: orange; }
+33.3% { color: yellow; }
+50% { color: green; }
+66.6% { color: blue; }
+83.3% { color: purple; }
+100% { color: red; }
+} 
+span[style^="font-family:'rainbow"] {
+   font-family: Arial !important;
+   color: #ff0000;
+   animation: rainbow2 10s;
+   animation-iteration-count: infinite;
+}
+
+/** Magnify **/
+span[style^="font-family:'magnify"] {
+  font-family: Arial !important;
+  transition: 0.2s;
+}
+span[style^="font-family:'magnify"]:hover {
+  transition: 0.2s;
+  font-size: 20pt;
+}
+
+/** hide word **/
+span[style^="font-family:'hide"] {
+  display: none !important;
+}
+
+/** highlight **/
+span[style^="font-family:'highlight"] {
+  background-color: #ffff90;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: Arial !important;
+}
+
+/** rule **/
+span[style^="font-family:'rules"] {
+  background-color: #dddddd;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  margin: 15px;
+  margin-right: 150px;
+  font-family: Arial !important;
+  border: 1px solid #aaaaaa;
+  display: block;
+}
+
+/** invisible ink **/
+span[style^="font-family:'blur"] {
+  transition: 0.2s;
+  filter: blur(4px);
+  font-family: Arial !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+span[style^="font-family:'blur"]:hover {
+  transition: 0.2s;
+  filter: blur(0px);
+}
+
+/** fuzzy **/
+span[style^="font-family:'fuzzy"] {
+   font-family: Arial !important;
+   filter: blur(1px);
+}
+
+/** invert **/
+span[style^="font-family:'invert"] {
+  font-family: Arial !important;
+  filter: invert(100%);
+}
+
+/** text shadow **/
+span[style^="font-family:'shadow"] {
+  font-family: Arial !important;
+  text-shadow: 1.5px 1.5px 1px #aaaaaa;
+}
+
+/** error **/
+span[style^="font-family:'error"] {
+  font-family: Arial !important;
+  color: #8b0000;
+  background-color: #f2dede;
+  border-left: 10px solid #8b0000;
+  display: block;
+  line-height: 1.428571429;
+  padding: 10px;
+}
+
+/** loud **/
+span[style^="font-family:'loud"] {
+  display: block; 
+  font-family: Arial !important;
+  animation: shout2 2s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@keyframes shout2 {
+0% { transform: scale(1); }
+50% { transform: scale(3); }
+100% { transform: scale(1); }
+}
+
+/** post header **/
+span[style^="font-family:'post-header"] {
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: Arial !important;
+  background-color: transparent;
+  border-bottom: 3px solid #333;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+span[style^="font-family:'post-header"]:hover {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  animation: headerhover 0.5s;
+}
+
+@keyframes headerhover {
+0% { padding-top: 5px; padding-bottom: 10px; }
+20% { padding-top: 15px; padding-bottom: 20px; }
+40% { padding-top: 25px; padding-bottom: 30px; }
+60% { padding-top: 35px; padding-bottom: 40px; }
+80% { padding-top: 45px; padding-bottom: 50px; }
+100% { padding-top: 55px; padding-bottom: 60px; }
+}
+
+/** font box **/
+span[style^="font-family:'box"],
+span[style^="font-family:'box-grey"],
+span[style^="font-family:'box-black"],
+span[style^="font-family:'box-red"],
+span[style^="font-family:'box-yellow"],
+span[style^="font-family:'box-green"],
+span[style^="font-family:'box-blue"]
+ {
+  margin: 2px;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  font-family: Arial !important;
+}
+span[style^="font-family:'box-grey"] {
+  background-color: #dddddd;
+}
+span[style^="font-family:'box-black"] {
+  background-color: black;
+  color: white;
+}
+span[style^="font-family:'box-red"] {
+  background-color: #ffdddd;
+}
+span[style^="font-family:'box-green"] {
+  background-color: #ddffdd;
+}
+span[style^="font-family:'box-yellow"] {
+  background-color: #ffffd2;
+}
+span[style^="font-family:'box-blue"] {
+  background-color: #ddddff;
+}
+
+/** giant text **/
+span[style^="font-family:'giant"] {
+  font-family: Arial !important;
+  font-size: 60pt;
+}
+ 
+/** fade in **/
+span[style^="font-family:'fadein"] {
+  font-family: Arial !important;
+  color: black;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+0% { color: transparent; }
+50% { color: transparent; }
+100% { color: black; }
+}
+
+/** fade out **/
+span[style^="font-family:'fadeout"] {
+  font-family: Arial !important;
+  color: white;
+  animation: fadeout 3s;
+}
+@keyframes fadeout {
+0% { color: black; }
+50% { color: black; }
+100% { color: white; }
+}
+
+/** flyin **/
+span[style^="font-family:'flyin"] {
+  font-family: Arial !important;
+  animation: flyin 4s;
+  position: relative;
+}
+@keyframes flyin {
+0% { left: 2000px; }
+50% { left: 2000px; }
+100% { left: 0px; }
+}
+
+/** flyout **/
+span[style^="font-family:'flyout"] {
+  font-family: Arial !important;
+  animation: flyout 4s;
+  position: relative;
+  left: 2000px;
+}
+@keyframes flyout {
+0% { left: 0px; }
+50% { left: 0px; }
+100% { left: 2000px; }
+}
+
+/** red to blue **/
+span[style^="font-family:'red-blue"] {
+  font-family: Arial !important;
+  color: blue;
+  animation: redblue 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes redblue {
+0% { color: red; }
+50% { color: blue; }
+100% { color: red; }
+}
+
+/** buttons **/
+span[style^="font-family:'button"] {
+  transition: 1s;
+  font-family: Arial !important;
+  padding: 2px; 
+  border-radius: 10px; 
+  padding-left: 6px;
+  padding-right: 6px; }
+span[style^="font-family:'button"]:hover {
+  transition: 1s;
+  background-color: black;
+  color: white; }
